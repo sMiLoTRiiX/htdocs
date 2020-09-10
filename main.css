@@ -1,0 +1,232 @@
+/* #### FONTS #### 
+    font-family: 'Karla', sans-serif;
+    font-family: 'Julius Sans One', sans-serif; 
+    font-family: 'Liberty';                           */
+
+@font-face {
+      font-family: "Liberty";
+      src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/907368/liberty.otf');
+    }
+
+/* ###################### */
+/* ###### GENERELL ###### */
+/* ###################### */
+
+html, body, h1, h2, h3, h4, h5, a, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(153,153,153,0.1);
+    margin: 0 0 100px 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 960px;
+    padding: 65 0 0 0;
+}
+/* ###################### */
+/* ######## MENU ######## */
+/* ###################### */
+
+#menu {
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    top: 0; 
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    width: 980px;
+    height: 50px; 
+    list-style: none;
+    border-radius: 5px;
+}
+
+#menu ul li {
+    font-family: 'Julius Sans One', sans-serif;
+    float: left;
+    width: 20%;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: rgb(118, 187, 255);
+}
+
+#menu ul li:hover {
+    background-color: #fff;
+    
+}
+
+#menu ul li a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    vertical-align: middle;
+    padding: 30px 0 0 0;
+    font-weight: 900;
+    transition: 500ms all;
+    display: inline-block;
+    position: relative;
+}
+
+#menu ul li a:hover {
+    color: rgb(64,224,208);
+    background-color: #fff;
+    transition: 200ms all;
+}
+
+/* ###################### */
+/* ###### CONTENT ####### */
+/* ###################### */
+
+.content {
+    width: 100%;
+    height: auto;
+    font-family: 'Julius Sans One', sans-serif;       
+    background-color: white !important;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.content h3 {
+    margin: 15px;
+    color: #328992;
+}
+
+.code {
+    width: auto;
+    height: auto;
+    border: 2px dashed rgb(100,149,237);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: rgb(118, 187, 255);
+    margin: 20px;
+}
+
+.code p {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    font-family: 'Karla', sans-serif;
+    color: #b63b3e;
+}
+
+.icon {
+    margin: 60px 0 0 10px; 
+}
+
+.icon img {
+    margin: 0 12px 0 0;
+    cursor: pointer;
+}
+
+/* ###################### */
+/* ######## LOGIN ####### */
+/* ###################### */
+
+#leer {
+    height: 10px;
+}
+
+#login {
+    width: 960px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#login form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#login form h1 {
+    color: #07559a;
+    font-size: 50px;
+    letter-spacing: 7px;
+    margin: 50px 0 20px 0;
+}
+
+#login form input {
+    border: none;
+}
+
+#login form input[type = "text"], #login form input[type = "password"]{
+    display: block;
+    margin: 20px;
+    text-align: center;
+    border-bottom: 2px solid  #07559a;
+    padding: 14px 10px;
+    width: 200px;
+    color: #07559a;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    outline: none;
+    transition: 500ms all;
+    float: left;
+}
+
+#login form input[type = "text"]:focus, #login form input[type = "password"]:focus {
+    border-bottom: 2px solid rgb(64,224,208);
+}
+
+#login form input[type = "submit"] {
+    margin: 20px 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    /*border-bottom: 2px solid #07559a;*/
+    color: #07559a;
+    font-size: 18px;
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+#login form input[type = "submit"]:hover, #login form input[type = "submit"]:focus {
+    color: rgb(64,224,208);
+    /* border-bottom: 2px solid rgb(64,224,208); */
+}
+
+/* ######################### */
+
+#test {
+    font-family: 'Liberty';
+    font-size: 7rem;
+    background-color: #171717;
+    width: 980px;
+    padding: 150px 0;
+}
+
+#test h1 {
+    text-align: center;
+    letter-spacing: -10px;
+    font-weight: 100;
+    flex-flow: row;
+}
+
+#test h1 .letter {
+    color: #8bd8e2;
+    text-shadow: 0 0 2rem #8bd8e2;
+    display: inline-block;
+}
+
+/* ######################### */
+
+/* ######################### */
+.vid_width {
+    height: 540px;
+    width: 960px;
+}
